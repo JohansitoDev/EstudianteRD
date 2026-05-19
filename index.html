@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstudianteRD - El Ecosistema del Universitario Dominicano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up { animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        
+        @keyframes slideInRow {
+            from { opacity: 0; transform: scaleY(0); transform-origin: top; }
+            to { opacity: 1; transform: scaleY(1); transform-origin: top; }
+        }
+        .animate-new-row { animation: slideInRow 0.3s ease-out forwards; }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 selection:bg-blue-100 selection:text-blue-600">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-2">
+                    <div class="flex gap-1">
+                        <span class="w-3 h-6 bg-blue-400 rounded-full"></span>
+                        <span class="w-3 h-6 bg-red-400 rounded-full"></span>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900">Estudiante<span class="text-blue-500">RD</span></span>
+                </div>
+                <div class="flex items-center gap-4 text-sm font-medium">
+                    <a href="#ecosistema" class="text-slate-600 hover:text-blue-600 transition">Ecosistema</a>
+                    <a href="#testimonios" class="text-slate-600 hover:text-blue-600 transition">Testimonios</a>
+                    <a href="#instalar" class="bg-blue-500 text-white px-4 py-2 rounded-xl shadow-sm hover:bg-blue-600 transition">Instalar App</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-5xl mx-auto px-4 pt-12 pb-6 text-center animate-fade-in-up">
+        <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-600 border border-emerald-100 mb-4">
+            <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span> ¡Llegó la hora de pasar el cuatrimestre limpio!
+        </span>
+        <h1 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-none">
+            Gestiona tu carrera con <br>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-slate-700 to-red-400">EstudianteRD</span>
+        </h1>
+        <p class="mt-4 text-base text-slate-500 max-w-2xl mx-auto leading-relaxed">
+            Haz clic directamente en las pantallas de los celulares para interactuar con la app. Completa tareas o añade celdas automáticamente.
+        </p>
+    </header>
+
+    <section id="ecosistema" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 animate-fade-in-up" style="animation-delay: 0.2s;">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-3 space-y-6 order-2 lg:order-1">
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition duration-300 group hover:-translate-x-1">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-500 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="layout-list"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">Pestañas de Clases</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Tus asignaciones organizadas dinámicamente por estados rápidos: Nuevas, Pendientes y Realizadas.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition duration-300 group hover:-translate-x-1">
+                    <div class="w-10 h-10 rounded-xl bg-red-50 text-red-400 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="pointer"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">Simulación Interactiva</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Prueba los flujos directamente en el prototipo centralizado antes de cargarlo en Expo Snack.</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 flex flex-col sm:flex-row gap-6 justify-center items-center order-1 lg:order-2 p-6 bg-slate-100 rounded-3xl border border-slate-200/60 shadow-inner">
+                
+                <div class="w-full max-w-[250px] bg-white rounded-[2.5rem] p-3 shadow-xl border-4 border-slate-900 relative transition transform hover:scale-[1.02] duration-300">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-3.5 bg-slate-900 rounded-b-xl z-20"></div>
+                    
+                    <div class="bg-slate-50 rounded-[2rem] pt-5 p-3 overflow-hidden text-[11px] h-[380px] flex flex-col justify-between relative">
+                        
+                        <div>
+                            <div class="flex justify-between items-center mb-3 border-b pb-2">
+                                <div>
+                                    <h4 class="font-black text-slate-800 text-xs">Universidad O&M</h4>
+                                    <p class="text-[9px] text-slate-400 font-medium">Ingeniería en Sistemas</p>
+                                </div>
+                                <div class="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-[9px]">JM</div>
+                            </div>
+
+                            <div class="flex gap-1 mb-3 text-[9px] font-bold">
+                                <span id="tab-nuevas" class="bg-blue-100 text-blue-600 px-2 py-0.5 rounded-md border border-blue-200 transition-all">Nuevas (1)</span>
+                                <span id="tab-listas" class="bg-slate-200 text-slate-500 px-2 py-0.5 rounded-md transition-all">Listas (0)</span>
+                            </div>
+
+                            <div class="space-y-2 relative">
+                                <p class="text-[9px] font-bold text-slate-400 uppercase tracking-wider mb-1">Presiona la clase 👇</p>
+                                
+                                <div id="clase-interactiva" onclick="abrirModalClase()" class="bg-blue-50/90 p-2 rounded-xl border border-blue-200 cursor-pointer hover:bg-blue-100/70 transition active:scale-95 relative group">
+                                    <div class="absolute right-2 top-2 w-2 h-2 bg-blue-500 rounded-full animate-ping"></div>
+                                    <p class="font-bold text-slate-700">Programación React Native</p>
+                                    <p class="text-slate-400 text-[9px]">Hoy - 6:00 PM</p>
+                                </div>
+
+                                <div class="bg-slate-100/80 p-2 rounded-xl border border-slate-200/40 opacity-60">
+                                    <p class="font-bold text-slate-600">Base de Datos II</p>
+                                    <p class="text-slate-400 text-[9px]">Mañana - 8:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal-clase" class="absolute inset-x-3 bottom-14 bg-white border border-slate-200 rounded-2xl p-3 shadow-xl hidden transition-all z-30">
+                            <h5 class="font-bold text-slate-800 text-xs mb-1 text-center">Detalle de Asignación</h5>
+                            <p class="text-slate-500 text-[9px] mb-3 text-center">¿Terminaste el entregable para el cuatrimestre?</p>
+                            <button onclick="completarClase()" class="w-full bg-emerald-500 text-white font-bold py-1 rounded-lg text-[9px] hover:bg-emerald-600 transition">
+                                ✅ Completar Asignación
+                            </button>
+                        </div>
+
+                        <div id="recompensa-helado" class="bg-slate-200 border border-slate-300 p-2 rounded-xl flex items-center gap-2 opacity-60 transition-all duration-500">
+                            <span id="icono-helado" class="text-sm filter grayscale">🍦</span>
+                            <div>
+                                <p id="titulo-helado" class="font-bold text-slate-600 text-[9px]">Recompensa Bloqueada</p>
+                                <p id="desc-helado" class="text-slate-500 text-[8px]">Pasa las materias para el premio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-[250px] bg-white rounded-[2.5rem] p-3 shadow-xl border-4 border-slate-900 relative transition transform hover:scale-[1.02] duration-300">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-3.5 bg-slate-900 rounded-b-xl z-20"></div>
+                    
+                    <div class="bg-slate-50 rounded-[2rem] pt-5 p-3 overflow-hidden text-[10px] h-[380px] flex flex-col justify-between">
+                        <div>
+                            <div class="mb-2">
+                                <h4 class="font-bold text-slate-800 text-xs flex items-center gap-1">
+                                    <i data-lucide="table" class="w-3 h-3 text-emerald-500"></i> Mi Registro Excel
+                                </h4>
+                                <p class="text-[8px] text-slate-400">Agrega campos personalizados en tiempo real</p>
+                            </div>
+
+                            <div class="border border-slate-200 rounded-lg overflow-hidden bg-white text-[8px]">
+                                <div class="grid grid-cols-3 bg-slate-100 font-bold p-1 border-b text-slate-600">
+                                    <div>Campo / Lista</div>
+                                    <div>Nota</div>
+                                    <div>Color</div>
+                                </div>
+                                <div id="cuerpo-excel" class="divide-y divide-slate-100">
+                                    <div class="grid grid-cols-3 p-1.5 bg-blue-50/50">
+                                        <div class="font-medium text-slate-700">Primer Parcial</div>
+                                        <div class="text-slate-500">28 / 30</div>
+                                        <span class="w-2 h-2 bg-blue-300 rounded-full my-auto mx-auto"></span>
+                                    </div>
+                                    <div class="grid grid-cols-3 p-1.5 bg-red-50/50">
+                                        <div class="font-medium text-slate-700">Proyecto Final</div>
+                                        <div class="text-slate-500">40 / 40</div>
+                                        <span class="w-2 h-2 bg-red-300 rounded-full my-auto mx-auto"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button onclick="agregarFilaExcel()" class="w-full mt-3 py-1.5 border border-dashed border-emerald-400 bg-emerald-50/30 rounded-lg text-emerald-600 hover:bg-emerald-50 transition text-[8px] font-bold flex items-center justify-center gap-1 active:scale-95">
+                                <i data-lucide="plus" class="w-2.5 h-2.5"></i> Añadir nuevo campo
+                            </button>
+                        </div>
+
+                        <div class="p-2 bg-emerald-50 text-emerald-700 font-bold rounded-xl text-center text-[9px] border border-emerald-100">
+                            Materias del Cuatrimestre: Pasando con A
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lg:col-span-3 space-y-6 order-3">
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition duration-300 group hover:translate-x-1">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-500 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="table"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">Módulo Estilo Excel</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Crea listas y filas personalizables con celdas de colores pasteles planos ideales para tus apuntes.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition duration-300 group hover:translate-x-1">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i data-lucide="party-popper"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1">Premios Cuatrimestrales</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Si pasas todas tus asignaturas, la aplicación despliega una alerta festiva con el premio que configuraste.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="testimonios" class="bg-slate-100/60 py-16 border-t border-b border-slate-200/30 overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-slate-900">Opiniones Universitarias</h2>
+                <p class="text-slate-500 text-xs mt-1">Lo que opinan los estudiantes dominicanos que ya probaron el prototipo interactivo.</p>
+            </div>
+            
+            <div class="relative h-[280px] w-full max-w-2xl mx-auto overflow-hidden border border-slate-200/60 rounded-3xl bg-white p-4 shadow-inner">
+                <div class="absolute top-0 inset-x-0 h-8 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute bottom-0 inset-x-0 h-8 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none"></div>
+
+                <div id="contenedor-testimonios" class="flex flex-col gap-4 transition-transform duration-700 ease-in-out">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="instalar" class="max-w-4xl mx-auto px-4 py-16 text-center">
+        <div class="bg-slate-900 rounded-[2rem] p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
+            <h2 class="text-2xl md:text-3xl font-black">Lleva EstudianteRD a tu celular</h2>
+            <p class="mt-2 text-slate-400 text-xs max-w-md mx-auto">Descarga la aplicación móvil oficial o interactúa con el prototipo emulado directamente desde tu navegador.</p>
+            <div class="mt-6 flex flex-wrap justify-center gap-3">
+                <button onclick="alert('Abriendo contenedor emulado de Android...')" class="bg-blue-500 text-white font-bold px-6 py-2.5 rounded-xl hover:bg-blue-600 transition text-xs flex items-center gap-2">
+                    <i data-lucide="smartphone" class="w-4 h-4"></i> Instalar en Android
+                </button>
+                <button onclick="alert('Abriendo contenedor emulado de iOS...')" class="bg-slate-800 text-slate-200 border border-slate-700 font-bold px-6 py-2.5 rounded-xl hover:bg-slate-700 transition text-xs flex items-center gap-2">
+                    <i data-lucide="apple" class="w-4 h-4"></i> Instalar en iOS
+                </button>
+            </div>
+        </div>
+        <p class="mt-12 text-[10px] text-slate-400">&copy; 2026 EstudianteRD. Compilando herramientas dinámicas para República Dominicana.</p>
+    </section>
+
+    <script>
+        lucide.createIcons();
+
+        function abrirModalClase() {
+            const modal = document.getElementById('modal-clase');
+            modal.classList.toggle('hidden');
+        }
+
+        function completarClase() {
+            document.getElementById('modal-clase').classList.add('hidden');
+            const tarjetaClase = document.getElementById('clase-interactiva');
+            tarjetaClase.className = "bg-emerald-50/90 p-2 rounded-xl border border-emerald-200 opacity-80 transition pointer-events-none";
+            tarjetaClase.innerHTML = `<p class="font-bold text-slate-700 line-through">Programación React Native</p><p class="text-emerald-600 text-[9px]">¡Completada con éxito! 🎉</p>`;
+            
+            document.getElementById('tab-nuevas').className = "bg-slate-200 text-slate-500 px-2 py-0.5 rounded-md";
+            document.getElementById('tab-nuevas').innerText = "Nuevas (0)";
+            document.getElementById('tab-listas').className = "bg-emerald-100 text-emerald-600 px-2 py-0.5 rounded-md border border-emerald-200";
+            document.getElementById('tab-listas').innerText = "Listas (1)";
+
+            const cajaRecompensa = document.getElementById('recompensa-helado');
+            cajaRecompensa.className = "bg-amber-50 border border-amber-200 p-2 rounded-xl flex items-center gap-2 animate-bounce transition-all duration-500";
+            
+            document.getElementById('icono-helado').className = "text-sm filter-none";
+            document.getElementById('titulo-helado').className = "font-bold text-amber-800 text-[9px]";
+            document.getElementById('titulo-helado').innerText = "¡Premio del Cuatri Listo! 🍦";
+            document.getElementById('desc-helado').className = "text-amber-600 text-[8px]";
+            document.getElementById('desc-helado').innerText = "¡Ganaste: Salida por un helado!";
+        }
+
+        const camposDisponibles = [
+            { nombre: 'Asistencia', nota: '10 / 10', bg: 'bg-emerald-50/50', punto: 'bg-emerald-300' },
+            { nombre: 'Segundo Parcial', nota: '26 / 30', bg: 'bg-purple-50/50', punto: 'bg-purple-300' },
+            { nombre: 'Práctica 3', nota: '15 / 15', bg: 'bg-amber-50/50', punto: 'bg-amber-300' }
+        ];
+        let indiceCampo = 0;
+
+        function agregarFilaExcel() {
+            if (indiceCampo >= camposDisponibles.length) {
+                alert("¡Ya agregaste todas las listas del prototipo de demostración!");
+                return;
+            }
+            const cuerpoExcel = document.getElementById('cuerpo-excel');
+            const datos = camposDisponibles[indiceCampo];
+            const nuevaFila = document.createElement('div');
+            nuevaFila.className = `grid grid-cols-3 p-1.5 ${datos.bg} animate-new-row border-t border-slate-100`;
+            nuevaFila.innerHTML = `
+                <div class="font-medium text-slate-700">${datos.nombre}</div>
+                <div class="text-slate-500">${datos.nota}</div>
+                <span class="w-2 h-2 ${datos.punto} rounded-full my-auto mx-auto"></span>
+            `;
+            cuerpoExcel.appendChild(nuevaFila);
+            indiceCampo++;
+        }
+
+        const listaTestimonios = [
+            { texto: '"Poder filtrar mi inicio de sesión seleccionando directamente mi universidad y carrera me ahorró tener que estructurar todo de cero."', autor: 'Alejandro Martínez', carrera: 'Ing. de Sistemas - O&M', iniciales: 'AM', colorBg: 'bg-blue-100', colorTxt: 'text-blue-600' },
+            { texto: '"Configuré una alerta de recompensa para irme a comer un helado si completaba todas las tareas del cuatrimestre limpio, ¡y la alerta interactiva es súper motivadora!"', autor: 'Johan Mancebo', carrera: 'Estudiante de Ciberseguridad', iniciales: 'JM', colorBg: 'bg-red-100', colorTxt: 'text-red-500' },
+            { texto: '"La vista del Excel con colores pasteles suaves es justo lo que requería para mis notas de laboratorio sin cansarme la vista en la noche."', autor: 'Verónica Díaz', carrera: 'Medicina - UASD', iniciales: 'VD', colorBg: 'bg-emerald-100', colorTxt: 'text-emerald-600' },
+            { texto: '"Gestionar los horarios rotativos y las entregas finales desde las pestañas dinámicas cambió por completo mi organización este cuatri."', autor: 'Marcos Peña', carrera: 'Contabilidad - UNPHU', iniciales: 'MP', colorBg: 'bg-purple-100', colorTxt: 'text-purple-600' },
+            { texto: '"Me encanta que los campos CRUD de la lista de tareas se sientan tan rápidos como una hoja de cálculo real. No da nada de pereza usarla."', autor: 'Camila Rossi', carrera: 'Diseño - INTEC', iniciales: 'CR', colorBg: 'bg-amber-100', colorTxt: 'text-amber-600' }
+        ];
+
+        const contenedor = document.getElementById('contenedor-testimonios');
+
+        function inicializarTestimonios() {
+            listaTestimonios.forEach(t => {
+                const card = document.createElement('div');
+                card.className = "bg-slate-50/80 p-5 rounded-2xl border border-slate-100 flex flex-col justify-between min-h-[110px] shrink-0 transition-opacity duration-500";
+                card.innerHTML = `
+                    <p class="text-slate-600 text-xs italic leading-relaxed">${t.texto}</p>
+                    <div class="mt-3 flex items-center gap-3 border-t pt-2 border-slate-200/40">
+                        <div class="w-7 h-7 rounded-full ${t.colorBg} flex items-center justify-center ${t.colorTxt} font-bold text-xs">${t.iniciales}</div>
+                        <div>
+                            <h4 class="font-bold text-[11px] text-slate-900">${t.autor}</h4>
+                            <p class="text-[9px] text-slate-400">${t.carrera}</p>
+                        </div>
+                    </div>
+                `;
+                contenedor.appendChild(card);
+            });
+        }
+
+        inicializarTestimonios();
+
+        function rotarTestimonios() {
+            const primeraCard = contenedor.firstElementChild;
+            if (!primeraCard) return;
+
+            const desplazamiento = primeraCard.offsetHeight + 16; 
+
+            contenedor.style.transform = `translateY(-${desplazamiento}px)`;
+
+            setTimeout(() => {
+                contenedor.style.transition = 'none'; 
+                contenedor.appendChild(primeraCard);  
+                contenedor.style.transform = 'translateY(0)'; 
+                
+                setTimeout(() => {
+                    contenedor.style.transition = 'transform 700s ease-in-out';
+                    contenedor.style.transitionDuration = '700ms';
+                }, 50);
+            }, 700);
+        }
+
+        setInterval(rotarTestimonios, 3500);
+    </script>
+</body>
+</html>
