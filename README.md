@@ -35,4 +35,4 @@ Al ser una página web estática optimizada que consume los frameworks mediante 
 
 1. Clona este repositorio de la landing page:
    ```bash
-   git clone [https://github.com/tu-usuario/EstudianteRD-LandingPage.git](https://github.com/tu-usuario/EstudianteRD-LandingPage.git)
+   git clone [https://github.com/tu-usuario/EstudianteRD-LandingPage.git](https://github.com/JohansitoDev/EstudianteRD-LandingPage.git)
